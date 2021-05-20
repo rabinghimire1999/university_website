@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSE UNIVERSITY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- header section -->
+<section class="sub-header">
+		<nav><!-- Naviagtion bar -->
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times-circle" onclick="hideMenu()"></i>
+				<ul>
+					<li ><a href="index.html">HOME</a></li>
+					<li ><a href="about.html">ABOUT</a></li>
+					<li ><a href="programme.html">PROGRAMME</a></li>
+					<li ><a href="blog.html">NOTICE</a></li>
+					<li ><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Contact us</h1>
+	
+</div>
+</section>
+<!-- Location Map-->
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14253.280485143352!2d87.21205884999999!3d26.73415875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef1531d4142e9d%3A0x5bf7684182acf5e5!2zMjbCsDQ0JzA0LjIiTiA4N8KwMTInNTMuMyJF!5e0!3m2!1sen!2snp!4v1621520539156!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	
+</section>
+
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<i class="fa fa-home"></i>
+			<span>
+				<h5>Ramdhuni-7,Sunsari</h5>
+				<p>Province-1,Nepal</p>
+			</span>
+			<i class="fa fa-phone"></i>
+			<span>
+				<h5>+977 9824332602</h5>
+				<p>Sunday to Saturday, 10 am to 5 pm</p>
+			</span>
+			<i class="fa fa-envelope"></i>
+			<span>
+				<h5>contact@eduford.edu.np</h5>
+				<p>email us your query</p>
+			</span>
+		</div>
+		<div class="contact-col">
+		<h3>Leave a message</h3>
+		<form class="message" action="fom-handler.php" method="POST">
+			<input type="text" name="name" placeholder="enter full name" required>
+			<input type="text" name="email" placeholder="enter email address" required>
+			<input type="text" name="subject" placeholder="enter subject" required>
+			<textarea row="5" name="message" placeholder="Your message"></textarea>
+			<button class="hero-btn red-btn">SUBMIT</button>
+		</form>
+		</div>
+	</div>
+</section>
+
+<!--footer-->
+<section class="footer">
+	<h4>About us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<div class="icons">
+		<i class="fa fa-facebook" aria-hidden="true"></i> 
+		<i class="fa fa-twitter" aria-hidden="true"></i>
+		<i class="fa fa-instagram" aria-hidden="true"></i>
+		<i class="fa fa-linkedin" aria-hidden="true"></i>
+	</div>
+</section>
+<!--Javascript for toggle menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu()
+	{
+		navLinks.style.right = "-200px";
+	}
+</script>
+</body>
+</html>
